@@ -1,0 +1,919 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif sans-serif;
+    outline: none;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+header #head1{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+header form{
+    display: flex;
+    height: 5rem;
+}
+#search-box{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #333;
+    border: .1rem solid black;
+    text-transform: none;
+}
+.search-box-container label{
+    height: 100%;
+    width: 8rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color: #fff;
+    background-color: green;
+    text-align: center;
+    cursor: pointer;
+}
+
+h1{
+    border: 2px solid rgb(88, 10, 10);
+    width: fit-content;
+    font-size:3rem;
+    color: white;
+    background-color:rgb(88,10,10) ;
+    padding: 5px;
+    border-radius: 15px 15px 5px 5px;
+   
+}
+header #head2{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem black;
+    position: relative;
+    text-decoration: none;
+
+}
+header #head nav{
+    display: flex;
+    justify-content: space-between;
+}
+header #head2 nav a{
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 1px solid tomato;
+    border-radius: 5px 5px 5px 5px;
+    color: red;
+}
+#head2  nav a:hover{
+    background: tomato;
+    color: #fff;
+}
+#head2.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+#head2 a i{
+    font-size:2.8rem;
+    color: black;
+    padding-left: 1rem;
+
+}
+#head2 a i:hover{
+    color: blue;
+}
+#menu{
+    font-size: 3rem;
+    border-radius: .5rem;
+    border: .1rem solid black;
+    padding: .8rem 1.5rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+h2{
+    line-height:100px;
+    position: absolute;
+}
+h2 p{
+    font-size: 35px ;
+    margin-left: 100px;
+    margin-top: 150px;
+    color:olive;
+}
+#bg1{
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/7/50/guilherme-gomes-chef-3d-shef-povar-eda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+#btn1{
+    border: 2px solid rgb(88,10,10) ;
+    border-radius: 5px 5px 5px 5px;
+    background-color:rgb(88,10,10) ;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin-left: 200px;
+    font-size: 3rem;
+}
+#btn1:hover{
+    background-color: rgb(228, 215, 215);
+    color: red;
+    border-color: tomato;
+}
+#loginbox{
+    background-color: rgb(189, 35, 8);
+    height: 300px;
+    width: 300px;
+    position:absolute;
+    left: 40%;
+    top:40%;
+    border: 2px solid rgb(189,35,8);
+    border-radius: 5px 5px 5px 5px;
+    display:none;
+}
+#close2{
+    margin-left: 220px;
+    margin-bottom: 340px;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+#loginbox form{
+    text-align:left;
+    padding:30px;
+}
+#logfont{
+    font-size: 25px;
+    color: white;
+    padding-left: 70px;
+    font-weight: bold;
+}
+#loginbox label{
+    font-size: 20px;
+    color: white;
+}
+#loginbox input{
+    height: 30px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 3px 3px 3px 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+#loginbox input:hover{
+    background-color: burlywood;
+}
+#loginbox form button{
+    margin-left: 55px;
+    border: 2px solid rgb(47, 13, 236);
+    border-radius: 5px 5px 5px 5px;
+    background-color:rgb(47, 13, 236);
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+#loginbox form button:hover{
+    background-color: white;
+    color:black;
+    border-color: white;
+}
+#section1{
+    background-color:silver;
+}
+h3{
+    font-size: 40px;
+    padding: 5px;
+    margin-left: 370px;
+}
+#section1 p{
+    font-size:20px;
+    padding: 15px 30px 15px 30px;
+}
+#suggestions{
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+#breakfast{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 40px;
+
+}
+#veg{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 40px;
+}
+#non-veg{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 40px;
+}
+h5{
+    font-size: 40px;
+    text-align: center;
+}
+#foods{
+    background-color: rgb(240, 243, 247);
+    text-align: center;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+#foods p{
+    font-size: 2.5rem;
+}
+h6{
+    font-size: 30px;
+    padding: 5px;
+}
+#dalia{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#dalia img{
+    width: 400px;
+    height:300px;
+}
+#paniyaram{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#paniyaram img{
+    width: 400px;
+    height: 300px;
+}
+#thepla{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#thepla img{
+    width: 400px;
+    height: 300px;
+}
+#idiyappam{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#idiyappam img{
+    width: 400px;
+    height: 300px;
+}
+#appam{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#appam img{
+    width: 400px;
+    height: 300px;
+}
+#idli{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#idli img{
+    width: 400px;
+    height: 300px;
+}
+#chana{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#chana img{
+    width: 400px;
+    height: 300px;
+}
+#dosa{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#dosa img{
+    width: 400px;
+    height: 300px;
+}
+#rava{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#rava img{
+    width: 400px;
+    height: 300px;
+}
+#lemon{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#lemon img{
+    width: 400px;
+    height: 300px;
+}
+#mushroom{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#mushroom img{
+    width: 400px;
+    height: 300px;
+}
+#dal{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#dal img{
+    width: 400px;
+    height: 300px;
+}
+#fried{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#fried img{
+    width: 400px;
+    height: 300px;
+}
+#chicken{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#chicken img{
+    width: 400px;
+    height: 300px;
+}
+#mutton{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#mutton img{
+    width: 400px;
+    height: 300px;
+}
+#egg{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#egg img{
+    width: 400px;
+    height: 300px;
+}
+#muttondosa{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#muttondosa img{
+    width: 400px;
+    height: 300px;
+}
+#muttonmasala{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#muttonmasala img{
+    width: 400px;
+    height: 300px;
+}
+#eggfry{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#eggfry img{
+    width: 400px;
+    height: 300px;
+}
+#gravy{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#gravy img{
+    width: 400px;
+    height: 300px;
+}
+#meals{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#meals img{
+    width: 400px;
+    height: 300px;
+}
+#vegetable{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#vegetable img{
+    width: 400px;
+    height: 300px;
+}
+#sandwich{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#sandwich img{
+    width: 400px;
+    height: 300px;
+}
+#chickenrice{
+    border: 2px solid Red;
+    border-radius: 3px 3px 3px 3px;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+}
+#chickenrice img{
+    width: 400px;
+    height: 300px;
+}
+#food1 div:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+
+}
+#food2 div:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+
+}
+#food3 div:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+
+}
+#facebook{
+    height: 90px;
+    width: 90px;
+    margin-top: 10px;
+}
+#insta{
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+}
+#mail{
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+}
+#twit{
+    height: 110px;
+    width: 110px;
+}
+footer{
+    display:block;
+    justify-content: space-between;
+}
+#foot{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+#foot1{
+    text-align: center;
+    display:block;
+}
+#foot1 p{
+    font-size: 3rem;
+    color: green;
+}
+#foot1 a{
+    text-decoration: none;
+    color: red;
+    font-size:20px ;
+    display: block;
+}
+#foot1 a:hover{
+    color: blue;
+}
+span{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-left:550px;
+}
+#foots{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cornflowerblue;
+    padding: 30px;
+}
+#foot1{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 16px 10px 16px;
+}
+#foot1 a{
+    font-size: 2rem;
+}
+#contact{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 16px 10px 16px;
+}
+#location{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px 16px 10px 16px;
+    text-align: center;
+    display: block;
+}
+#location p{
+    font-size: 3rem;
+    color: green;
+    text-align: center;
+}
+#location a{
+    font-size: 2rem;
+    margin-right: 10px;
+    color: red;
+}
+#location a:hover{
+    color: blue;
+}
+#contact input{
+    font-size: 20px;
+    padding: 5px;
+}
+#contact a{
+    font-size:15px;
+    border-radius: 5px;
+    border: 2px solid green;
+    padding: 5px;
+    color: white;
+    background-color: green;
+    margin-left: 50px;
+    font-weight: bold;
+}
+#contact a:hover{
+    background-color: rgb(26, 46, 6);
+    color:white;
+    border-color: rgb(26, 46, 6);
+    font-weight: bold;
+}
+/* media queries*/
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    #foods{
+        display: block;
+    }
+    #food1 div{
+        width:100%;
+    }
+    #food2 div{
+        width:100%;
+    }
+    #food3 div{
+        width:100%;
+    }
+    #food1 div img{
+        width: 80%;
+        height: 40%;
+    }
+    #food2 div img{
+        width: 80%;
+        height: 40%;
+    }
+    #food3 div img{
+        width: 80%;
+        height: 40%;
+    }
+    footer img{
+        width: 100%;
+    }
+}
+
+@media(max-width:991px){
+    #head1,#head2{
+        padding: 2rem;
+    }
+    h3{
+        font-size:3rem;
+        padding: 5px;
+        margin-left:260px;
+    }
+    #section1 p{
+        font-size:20px;
+        padding: 15px 30px 15px 30px;
+    }
+    #suggestions{
+        display: flex;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    #foods{
+        display: block;
+    }
+    #food1{
+        display:block;
+    }
+    #food1 div{
+        width: 100%;
+    }
+    #food1 div img{
+        width: 90%;
+        height: 70%;
+    }
+    #food2 div{
+        width: 100%;
+    }
+    #food2 div img{
+        width: 90%;
+        height: 70%;
+    }
+    #food3 div{
+        width: 100%;
+    }
+    #food3 div img{
+        width: 90%;
+        height: 70%;
+    }
+    #food2{
+        display:block;
+    }
+    #food3{
+        display:block;
+    }
+    footer{
+        display: block;
+    }
+    footer img{
+        width: 100%;
+    }
+    #loginbox{
+        margin-top: 20%;
+    }
+}
+
+@media(max-width:768px){
+
+    #menu{
+        display: initial;
+    }
+    #head2 nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        padding: 1rem 2rem;
+        display: none;
+    }
+    #head2 nav.active{
+        display:initial;
+    }
+    #head2 nav a{
+        font-size: 2.5rem;
+        display: block;
+        text-align: center;
+        background: #fff;
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+    h3{
+        font-size:3rem;
+        padding: 5px;
+        margin-left: 130px;
+    }
+    #section1 p{
+        font-size:2rem;
+        padding: 15px 30px 15px 30px;
+    }
+    #suggestions{
+        display:block;
+        padding: 30px;
+    }
+    h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    h5{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #foods{
+        background-color: rgb(240, 243, 247);
+        text-align: center;
+        display:block;
+        padding: 10px;
+    }
+    h6{
+        font-size:3rem;
+        padding: 5px;
+    }
+    #foods p{
+        font-size: 2rem;
+    }
+    #food1{
+        display:block;
+    }
+    #food2{
+        display: block;
+    }
+    #food3{
+        display: block;
+    }
+    #food1 div{
+        width: 100%;
+    }
+    #food1 div img{
+        width: 90%;
+        height: 70%;
+    }
+    #food2 div{
+        width: 100%;
+    }
+    #food2 div img{
+        width: 90%;
+        height: 70%;
+    }
+    #food3 div{
+        width: 100%;
+    }
+    #food3 div img{
+        width: 90%;
+        height: 70%;
+    }
+    #foots{
+        display: inline-block;
+        width:100%
+    }
+    footer img{
+        width:100%;
+    }
+    
+    #contact input{
+        width: 80%;
+    }
+    #contact a{
+        margin-left: 30%;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    #head1{
+        flex-flow: column;
+    }
+    #head1 .search-box-container{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    h2 p{
+        font-size: 3rem;
+        margin-left: 25px;
+    }
+    #btn1{
+        font-size: 2rem;
+        margin-left: 120px;
+    }
+    h3{
+        font-size:2rem;
+        padding: 5px;
+        margin-left: 100px;
+    }
+    #section1 p{
+        font-size:1.5rem;
+        padding: 15px 30px 15px 30px;
+    }
+    #suggestions{
+        display: block;
+        padding: 30px;
+        justify-content: space-evenly;
+    }
+    h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    h5{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #foods{
+        background-color: rgb(240, 243, 247);
+        text-align: center;
+        display:block;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    h6{
+        font-size:3rem;
+        padding: 5px;
+    }
+    #foods p{
+        font-size: 2rem;
+    }
+    footer{
+        display: block;
+        width: 100%;
+    }
+    footer img{
+        width:100%;
+        padding: 0;
+    }
+    #loginbox{
+        left:10%;
+    }
+}
